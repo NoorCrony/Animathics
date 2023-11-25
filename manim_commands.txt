@@ -1,0 +1,15 @@
+EXPORT VIDEO   
+    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql 
+    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql -o rough_work.mp4 -fps 60
+
+Disable Caching
+    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql  --disable_caching
+    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql  --skip_animations
+
+
+SAVE FILE TO SPECIFIED DIRECTORY
+    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql -o "C:\Users\maham\Documents\Repos\Animathics\a\output.mp4" --disable_caching
+
+
+
+manim rough_work\advanced_tex_fonts.py TexFontTemplateManual -r 1920,1080 -ql
