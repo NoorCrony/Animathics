@@ -1,0 +1,6 @@
+YT: https://www.youtube.com/watch?v=5qj3b7DY5oA
+GIT: https://github.com/mphammer/Manim-Mobjects-and-Animations/blob/main/README.md
+
+COMMANDS
+    $ manim -pql MichaelHammer/mobjects.py
+    $ manim -pql MichaelHammer/animations.py
