@@ -1,0 +1,172 @@
+1
+00:00:00,000 --> 00:00:01,724
+Hey Manim Community!
+
+2
+00:00:02,000 --> 00:00:04,404
+Today, I want to show you how you
+
+3
+00:00:04,504 --> 00:00:08,428
+can generate voiceovers directly in your Python code.
+
+4
+00:00:08,466 --> 00:00:12,864
+AI generated voices have become realistic enough for use in
+
+5
+00:00:12,964 --> 00:00:18,352
+most content. Using neural text-to-speech frees you from the painstaking
+
+6
+00:00:18,452 --> 00:00:23,078
+process of recording and manually syncing audio to your video.
+
+7
+00:00:23,200 --> 00:00:28,235
+As you can see, Manim started playing this voiceover, right as the
+
+8
+00:00:28,335 --> 00:00:33,060
+code object started to be drawn. Let's see some more examples.
+
+9
+00:00:34,133 --> 00:00:36,769
+This circle is drawn as I speak.
+
+10
+00:00:36,933 --> 00:00:39,737
+Let's shift it to the left 2 units.
+
+11
+00:00:39,866 --> 00:00:42,982
+Now, let's transform it into a square.
+
+12
+00:00:43,133 --> 00:00:46,129
+I would go on, but you get the idea.
+
+13
+00:00:46,200 --> 00:00:48,500
+Let's see how the API works!
+
+14
+00:00:48,533 --> 00:00:51,096
+First, we create a scene using the
+
+15
+00:00:51,196 --> 00:00:54,073
+Voiceover Scene class from the plugin.
+
+16
+00:00:54,133 --> 00:00:56,811
+Then, we initialize the voiceover by
+
+17
+00:00:56,911 --> 00:01:00,129
+setting the appropriate speech synthesizer.
+
+18
+00:01:00,200 --> 00:01:04,108
+In this example, we use Azure Text-to-speech.
+
+19
+00:01:04,200 --> 00:01:08,012
+We use the English speaking neural voice called Aria.
+
+20
+00:01:08,066 --> 00:01:11,710
+We use the style called "newscast casual".
+
+21
+00:01:11,800 --> 00:01:16,394
+Finally, we give an option to speed up the voiceover playback
+
+22
+00:01:16,494 --> 00:01:20,628
+fifteen percent, because the default is a bit too slow.
+
+23
+00:01:20,666 --> 00:01:25,414
+With the configuration out of the way, it is time to animate.
+
+24
+00:01:25,466 --> 00:01:28,150
+Let's initialize the circle object.
+
+25
+00:01:28,200 --> 00:01:30,718
+Then, we need to tell the scene to
+
+26
+00:01:30,818 --> 00:01:35,492
+start narrating, by calling the function "self-dot-voiceover".
+
+27
+00:01:35,533 --> 00:01:39,554
+By wrapping our animation inside a "with-statement", we
+
+28
+00:01:39,654 --> 00:01:42,927
+ensure that once it finishes playing, it will
+
+29
+00:01:43,027 --> 00:01:46,449
+also wait for the voiceover playback to finish.
+
+30
+00:01:46,533 --> 00:01:51,086
+This is extremely convenient, and let's you chain voiceovers back
+
+31
+00:01:51,186 --> 00:01:54,665
+to back without having to think how long they are.
+
+32
+00:01:54,733 --> 00:01:57,432
+We just need to repeat the same pattern
+
+33
+00:01:57,532 --> 00:02:02,313
+with self-dot-voiceover and with-statements. Here is something cool.
+
+34
+00:02:02,400 --> 00:02:08,074
+We can retrieve the duration of the generated voiceover programmatically, and then
+
+35
+00:02:08,174 --> 00:02:11,948
+use it to define for how long an animation should play.
+
+36
+00:02:12,000 --> 00:02:16,150
+And that's not even the best part! You can switch the AI
+
+37
+00:02:16,250 --> 00:02:21,236
+generated voice with an actual recording of your voice very easily.
+
+38
+00:02:21,333 --> 00:02:26,633
+To do that, you record an MP3 of the final text of your video.
+
+39
+00:02:26,733 --> 00:02:31,658
+Manim-voiceover then splits your audio automatically and replaces
+
+40
+00:02:31,758 --> 00:02:35,369
+the AI generated voice with your real recording.
+
+41
+00:02:37,466 --> 00:02:40,538
+Manim-voiceover makes it much easier to
+
+42
+00:02:40,638 --> 00:02:43,222
+do voiceovers for Manim projects.
+
+43
+00:02:43,266 --> 00:02:47,390
+Visit the GitHub repo to start using it in your project.
+

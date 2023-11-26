@@ -1,14 +1,15 @@
 EXPORT VIDEO   
-    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql 
-    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql -o rough_work.mp4 -fps 60
+    manim rough_work\voiceover-demo.py VoiceoverDemo -r 1920,1080 -ql 
+    manim rough_work\voiceover-demo.pydemo VoiceoverDemo -r 1920,1080 -ql -o rough_work.mp4 -fps 60
 
 Disable Caching
-    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql  --disable_caching
-    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql  --skip_animations
+    manim rough_work\voiceover-demo.py VoiceoverDemo -r 1920,1080 -ql  --disable_caching
+    manim rough_work\voiceover-demo.py VoiceoverDemo -r 1920,1080 -ql  --skip_animations
+    manim ${file} ${input:scene} -r 1920,1080 -pql  --disable_caching
 
 
 SAVE FILE TO SPECIFIED DIRECTORY
-    manim rough_work\basic.py OpeningManim -r 1920,1080 -ql -o "C:\Users\maham\Documents\Repos\Animathics\a\output.mp4" --disable_caching
+    manim rough_work\voiceover-demo.py VoiceoverDemo -r 1920,1080 -ql -o "C:\Users\maham\Documents\Repos\Animathics\a\output.mp4" --disable_caching
 
 
 

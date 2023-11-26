@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Manim Render Scene",
+            "type": "shell",
+            "command": "manim ${file} ${input:Scene} -pql",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "Scene",
+            "type": "promptString",
+            "description": "Enter the scene you want to render: "
+        }
+    ]
+}
+
+
+

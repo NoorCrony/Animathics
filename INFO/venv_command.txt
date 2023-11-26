@@ -1,0 +1,2 @@
+ACTIVATE VENV
+    .\animathics\Scripts\activate

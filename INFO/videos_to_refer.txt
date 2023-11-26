@@ -1,2 +1,8 @@
 INSTALLATION GUIDE
     https://www.youtube.com/watch?v=CYOLQk8GpME
+
+EFFICIENT RENDERING IN VSCODE
+    https://www.youtube.com/watch?v=sFt-U3F-H1c
+
+MANIM VOICEOVER DOCUMENTATION
+    https://voiceover.manim.community/en/latest/installation.html
